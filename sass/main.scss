@@ -1,0 +1,24 @@
+//COMMONS
+
+@import "./utils/vars";
+@import "./base/reset";
+@import "./base/common";
+@import "./utils/hidden";
+
+//COMPONENTs
+@import "./components/container";
+@import "./components/btn";
+@import "./components/modal";
+@import "./components/networks";
+
+//PORTFOLIO
+@import "./layouts/header";
+@import "./layouts/heroportfolio";
+@import "./layouts/footer";
+
+//STIDIO
+@import "./layouts/herostudio";
+@import "./layouts/quality";
+@import "./layouts/occupation";
+@import "./layouts/team";
+@import "./layouts/companies";
