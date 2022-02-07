@@ -1,7 +1,9 @@
 .team {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .team-title {
@@ -15,13 +17,12 @@
 }
 
 .team-list {
-  display: flex;
+  // display: flex;
   margin-right: -30px;
 }
 
-// .team-li
 .team-list__li {
-  flex-basis: calc(100% / 4 - 30px);
+  // flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
 }
 
