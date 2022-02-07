@@ -76,6 +76,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .hero-item-btn-all {
   font-family: inherit;
   font-weight: 500;
@@ -866,12 +872,41 @@ body {
   margin-bottom: 50px;
 }
 
-.team-list {
-  margin-right: -30px;
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .team-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
 }
 
 .team-list__li {
   margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__li {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__li {
+    width: calc(100% / 4 - 30px);
+  }
 }
 
 .data__name {
