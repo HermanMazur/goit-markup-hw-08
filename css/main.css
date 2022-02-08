@@ -96,10 +96,6 @@ body {
   padding: 6px 22px;
 }
 
-.hero-btn--all {
-  margin-right: 8px;
-}
-
 .hero-item-btn {
   font-family: inherit;
   font-weight: 500;
@@ -119,6 +115,10 @@ body {
   color: var(--third-color-text);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.porfolio-list__item {
+  margin-right: 8px;
 }
 
 .porfolio-list__item:not(:last-child) {
@@ -463,34 +463,93 @@ body {
   bottom: 0;
 }
 
-.porfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .porfolio {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 }
 
-.porfolio-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .porfolio {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
 }
 
-.list-portf {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .porfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .porfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .porfolio-list {
+    display: flex;
+    margin-bottom: 30px;
+    margin-right: 8px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .porfolio-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-right: 8px;
+  }
+}
+
+.list-img {
   margin-left: -30px;
   margin-bottom: -30px;
 }
 
-.hero-list-img {
+@media screen and (min-width: 768px) {
+  .list-img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.hero-item-img {
   margin-left: 30px;
   margin-bottom: 30px;
-  flex-basis: calc(100% / 9 - 30px);
   background: #ffffff;
 }
 
-.hero-list-img:hover .portf-text-img {
+.hero-item-img:hover .portf-text-img {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-item-img {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-item-img {
+    width: calc(100% / 3 - 30px);
+  }
 }
 
 .portf-text-img {
