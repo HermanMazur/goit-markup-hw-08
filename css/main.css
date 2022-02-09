@@ -618,9 +618,31 @@ body {
   background-color: #2f303a;
 }
 
-.container-footer {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer_tablet {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    margin-left: 0px;
+  }
 }
 
 .footer-navigator {
@@ -633,6 +655,7 @@ body {
 
 .logo {
   display: block;
+  align-items: center;
 }
 
 .ourconnect {
