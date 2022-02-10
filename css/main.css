@@ -618,10 +618,6 @@ body {
   background-color: #2f303a;
 }
 
-.container-footer {
-  text-align: center;
-}
-
 @media screen and (min-width: 768px) {
   .container-footer {
     display: flex;
@@ -633,7 +629,6 @@ body {
 @media screen and (min-width: 1200px) {
   .container-footer {
     display: flex;
-    align-items: baseline;
   }
 }
 
@@ -643,10 +638,12 @@ body {
 
 .logo {
   display: block;
+  text-align: center;
 }
 
 .ourconnect {
   margin-top: 20px;
+  text-align: center;
 }
 
 .ourconnect__map {
@@ -691,8 +688,23 @@ body {
 }
 
 .join {
-  margin-left: 70px;
-  width: 208px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .join {
+    margin-left: 165px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+    width: 208px;
+  }
 }
 
 .footsocials {
@@ -754,9 +766,11 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .online__title {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -764,13 +778,35 @@ body {
   border-color: var(--accent-color);
 }
 
-.btn-input {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .online__title {
+    text-align: center;
+  }
 }
 
-.footer-email-online {
-  width: 570px;
-  margin-left: 93px;
+.btn-input {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-input {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-email-online {
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-email-online {
+    width: 570px;
+    margin-left: 93px;
+  }
 }
 
 .online-email {
@@ -785,10 +821,17 @@ body {
   padding-left: 16px;
   margin-right: 12px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
 }
 
 .online-email:focus {
   border-color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .online-email {
+    width: 450px;
+  }
 }
 
 .comand {
