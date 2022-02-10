@@ -5,35 +5,22 @@
 }
 
 .container-footer {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-  }
-}
-
-// ???????????
-.footer_tablet {
+  text-align: center;
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: baseline;
     flex-wrap: wrap;
-  }
-}
-
-// !!!!!!!!!!!!!!
-.footer__contacts {
-  @media screen and (min-width: 768px) {
-    margin-left: 76px;
+    justify-content: center;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 0px;
+    display: flex;
+    align-items: baseline;
   }
 }
 
-.footer-navigator {
-  min-width: 231px;
-}
+// .footer-navigator {
+//   min-width: 231px;
+// }
 
 .web1 {
   color: var(--third-color-text);
@@ -41,7 +28,6 @@
 
 .logo {
   display: block;
-  align-items: center;
 }
 
 .ourconnect {
@@ -158,7 +144,7 @@
 }
 
 .online__title {
-  display: flex;
+  // display: flex;
   margin-bottom: 20px;
   &:focus {
     border-color: var(--accent-color);

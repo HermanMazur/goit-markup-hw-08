@@ -618,35 +618,23 @@ body {
   background-color: #2f303a;
 }
 
+.container-footer {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container-footer {
     display: flex;
     align-items: baseline;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .footer_tablet {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer__contacts {
-    margin-left: 76px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer__contacts {
-    margin-left: 0px;
-  }
-}
-
-.footer-navigator {
-  min-width: 231px;
 }
 
 .web1 {
@@ -655,7 +643,6 @@ body {
 
 .logo {
   display: block;
-  align-items: center;
 }
 
 .ourconnect {
@@ -770,7 +757,6 @@ body {
 }
 
 .online__title {
-  display: flex;
   margin-bottom: 20px;
 }
 
@@ -806,12 +792,12 @@ body {
 }
 
 .comand {
+  max-width: 1600px;
   background-color: #2f303a;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
-  max-width: 1600px;
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -820,14 +806,26 @@ body {
 
 .comand__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-color-text);
-  max-width: 696px;
-  margin: 0 auto 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .comand__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--third-color-text);
+    max-width: 696px;
+    margin: 0 auto 30px;
+  }
 }
 
 .advantage {
