@@ -618,6 +618,10 @@ body {
   background-color: #2f303a;
 }
 
+.container-footer {
+  align-items: baseline;
+}
+
 @media screen and (min-width: 768px) {
   .container-footer {
     display: flex;
@@ -629,6 +633,7 @@ body {
 @media screen and (min-width: 1200px) {
   .container-footer {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -638,12 +643,22 @@ body {
 
 .logo {
   display: block;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    text-align: center;
+  }
 }
 
 .ourconnect {
   margin-top: 20px;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .ourconnect {
+    text-align: center;
+  }
 }
 
 .ourconnect__map {
@@ -766,7 +781,18 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .connect-footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect-footer {
+    align-items: baseline;
+  }
 }
 
 .online__title {
@@ -778,9 +804,9 @@ body {
   border-color: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1199px) {
   .online__title {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -791,7 +817,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .btn-input {
-    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -831,6 +857,12 @@ body {
 @media screen and (min-width: 480px) {
   .online-email {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .online-email {
+    margin-bottom: 0;
   }
 }
 
