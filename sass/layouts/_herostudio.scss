@@ -41,13 +41,15 @@
   }
 }
 
-&__title {
+.comand__title {
   color: var(--third-color-text);
 
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
+  max-width: 360px;
+
   text-transform: uppercase;
 
   text-align: center;
