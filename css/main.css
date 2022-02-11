@@ -361,44 +361,37 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.site-list {
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__container--nav {
   display: flex;
-  margin-left: 93px;
   align-items: center;
 }
 
-.site-list__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .header__container--nav {
+    display: none;
+  }
 }
 
 .header-nav {
   display: flex;
   align-items: center;
+  margin-left: 93px;
 }
 
-.connect {
+.site-list {
   display: flex;
-  margin-left: auto;
   align-items: center;
 }
 
-.logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700px;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--first-color-text);
-}
-
-.web {
-  color: var(--accent-color);
+.site-list__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-list__link {
@@ -417,36 +410,6 @@ body {
   color: var(--accent-color);
 }
 
-.connect__mail,
-.connect__tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: flex;
-  align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.connect__mail:hover, .connect__mail:focus,
-.connect__tel:hover,
-.connect__tel:focus {
-  color: var(--accent-color);
-}
-
-.connect__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.icon-mail,
-.icon-tel {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
 .current {
   color: var(--accent-color);
   position: relative;
@@ -461,6 +424,116 @@ body {
   background-color: var(--accent-color);
   left: 0;
   bottom: 0;
+}
+
+.header__container--connect {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .header__container--connect {
+    display: none;
+  }
+}
+
+.connect {
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .connect {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .connect__item:not(:last-child) {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.icon-mail {
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+}
+
+.icon-tel {
+  width: 10px;
+  height: 14px;
+  margin-right: 8px;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
+
+.connect__mail,
+.connect__tel {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: #757575;
+  display: flex;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .connect__mail,
+  .connect__tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.connect__mail:hover, .connect__mail:focus,
+.connect__tel:hover,
+.connect__tel:focus {
+  color: var(--accent-color);
+}
+
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--first-color-text);
+}
+
+.web {
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 480px) {
