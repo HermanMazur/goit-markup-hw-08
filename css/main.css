@@ -395,6 +395,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .mobile__btn-menu {
+    display: none;
+  }
+}
+
 .mobile__btn-close {
   display: block;
   margin-left: auto;
@@ -419,6 +425,7 @@ body {
   line-height: 1.7;
   text-align: center;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: #212121;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -457,6 +464,7 @@ body {
 
 .mobile__contacts-link {
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 @media screen and (min-width: 480px) {
