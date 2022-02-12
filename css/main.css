@@ -612,7 +612,7 @@ body {
 
 @media screen and (max-width: 1199px) {
   .connect__item:not(:last-child) {
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
