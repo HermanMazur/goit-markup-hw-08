@@ -1,8 +1,11 @@
 .backdrop {
   position: fixed;
   top: 0;
+  left: 0;
+
   width: 100vw;
   height: 100vh;
+
   background-color: rgba(37, 38, 41, 0.62);
   transition: opacity 500ms linear, visibility 500ms;
 }

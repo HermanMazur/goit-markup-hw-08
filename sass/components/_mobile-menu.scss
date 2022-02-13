@@ -36,6 +36,12 @@
 }
 
 .mobile__btn-menu {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background-color: transparent;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -118,6 +124,11 @@
     font-size: 34px;
     line-height: 1.7;
     letter-spacing: 0.02em;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 }
 

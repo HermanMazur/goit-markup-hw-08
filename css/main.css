@@ -156,6 +156,7 @@ body {
 .backdrop {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(37, 38, 41, 0.62);
@@ -395,6 +396,13 @@ body {
   }
 }
 
+.mobile__btn-menu {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
 @media screen and (min-width: 768px) {
   .mobile__btn-menu {
     display: none;
@@ -474,6 +482,10 @@ body {
     line-height: 1.7;
     letter-spacing: 0.02em;
   }
+}
+
+.mobile__contacts-link:hover, .mobile__contacts-link:focus {
+  color: var(--accent-color);
 }
 
 .mobile__contacts-link--mail {
