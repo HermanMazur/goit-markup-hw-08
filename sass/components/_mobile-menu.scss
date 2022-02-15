@@ -118,12 +118,13 @@
 .mobile__contacts-link {
   color: var(--accent-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 
   @media screen and (min-width: 480px) {
-    font-weight: 500;
     font-size: 34px;
-    line-height: 1.7;
-    letter-spacing: 0.02em;
   }
 
   &:hover,
@@ -134,7 +135,7 @@
 
 .mobile__contacts-link--mail {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
@@ -162,11 +163,12 @@
 .mobile__social-link {
   display: block;
   color: var(--accent-color);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1, 22;
+  letter-spacing: 0.02em;
 
   @media screen and (min-width: 480px) {
-    font-weight: 500;
     font-size: 18px;
-    line-height: 1, 8;
-    letter-spacing: 0.02em;
   }
 }
