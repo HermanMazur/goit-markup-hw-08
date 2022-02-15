@@ -1,7 +1,9 @@
-// .actions {
-//   padding-top: 0;
-//   padding-bottom: 94px;
-// }
+.actions {
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+}
 
 .occupation-img {
   display: none;
@@ -24,6 +26,10 @@
     display: flex;
     font-weight: wrap;
     margin-right: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
