@@ -761,7 +761,7 @@ body {
 @media screen and (min-width: 768px) {
   .porfolio {
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1265,6 +1265,7 @@ body {
 }
 
 .quality-list__item {
+  padding-bottom: 30px;
   margin-right: 30px;
 }
 
@@ -1305,11 +1306,6 @@ body {
 
 .quality-list__item:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
-}
-
-.actions {
-  padding-top: 0;
-  padding-bottom: 94px;
 }
 
 .occupation-img {
