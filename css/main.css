@@ -58,10 +58,10 @@ body {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -119,6 +119,13 @@ body {
 
 .porfolio-list__item {
   margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .porfolio-list__item {
+    margin-bottom: 0;
+  }
 }
 
 .porfolio-list__item:not(:last-child) {
@@ -751,18 +758,9 @@ body {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
-  .porfolio {
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .porfolio {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.porfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -772,19 +770,16 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .porfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    margin-right: 8px;
-  }
+.porfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .porfolio-list {
-    display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 30;
     margin-right: 8px;
     justify-content: center;
   }
