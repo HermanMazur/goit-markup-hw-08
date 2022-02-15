@@ -857,6 +857,15 @@ body {
 .hero-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .hero-link:hover, .hero-link:focus {
@@ -869,12 +878,16 @@ body {
 }
 
 .portfolio-box {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  padding: 20px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-box {
+    flex-grow: 1;
+  }
 }
 
 .hero-title {
