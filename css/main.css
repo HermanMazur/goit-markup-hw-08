@@ -1317,6 +1317,10 @@ body {
   }
 }
 
+.quality-list__item:nth-child(4) {
+  margin-bottom: 0;
+}
+
 .quality-list__item:nth-child(1)::before {
   background-image: url(../images/antenna.svg);
 }
